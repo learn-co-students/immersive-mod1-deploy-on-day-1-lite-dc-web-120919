@@ -31,23 +31,16 @@ table.
 
 ## Assignment
 
-Your assignment is to create a student profile for someone sitting at your
-table. By the end of this project, every student should have a profile for
+Your assignment is to create a student profile for someone in your group. By the end of this project, every student should have a profile for
 themselves that was created by someone else and every student should have
 created a profile for someone else. If you are sitting at a table of four, it
 might be easiest to pair up. If you are sitting at a table of three, it might be
-easiest to create the profile of the student clockwise to you. If you are
-sitting at a...well you get the picture.
+easiest to create the profile of the student clockwise to you.
 
-Now, you might be freaking out and wondering, "Am I making a webapp?!?!" Not
-today — we'll just be working with HTML and file structures. You don't need to
-know Rails, JavaScript, or even Ruby for this project. And your classmates and
-instructors are here to help!
-
-You'll have about three hours to complete the first section of this lab. Use
-that time to get to know your table, get familiar with git workflows, and
+You'll have about two hours to complete this lab. Use
+that time to get to know your group members, get familiar with git workflows, and
 re-familiarize yourself with HTML. If you feel stuck, ask any instructor for
-help. **Keep in mind everyone in your table will be pushing to the same repository.**  
+help. **Keep in mind everyone in your group will be pushing to the same repository.**  
 Think about using a workflow with your teammates that will
 minimize conflicts.
 
@@ -59,21 +52,15 @@ get started. They'll be using this content as the project evolves for their
 resume and other profiles online.
 
 * Name
-* Github Username
-* Blog URL (if they don't already have a blog it will be their-github-username.github.io)
-* Tagline
+* Short Bio
 * Profile Picture (something normal, a headshot, of a good reusable size that
   can be easily cropped)
 * Background Picture
-* Treehouse Account
-* CoderWall Account
-* CodeSchool Account
-* Favorite Websites
-* Previous Work Experience
-* Short Bio
-* Twitter URL
-* LinkedIn URL
-* Education
+* Previous Education and/or Work Experience
+* Github URL
+* LinkedIn URL (if they have one)
+* Favorite cites, food, websites
+* Favorite quote
 
 ## Structure
 
@@ -106,14 +93,12 @@ The only file you'll alter is `index.html`.
 
 While working on this project, you will need to add the following files:
 
-* Add three pictures to the `img/students` folder (they can be jpg or png files):
+* Add two pictures to the `img/students` folder (they can be jpg or png files):
   * A background picture
-  * A picture for the index page
-  * A picture for the profile page
+  * A picture both the index page and profile page
 * Add one HTML file to the `students/` folder. Use the `student_name.html` for
   reference. In fact, feel free to copy as much of the HTML from
-  `student_name.html` into the new file you've created (just don't rename /
-  override that file, as that will cause you some git headaches).
+  `student_name.html` into the new file you've created.
 
 ## Getting Started
 
@@ -232,9 +217,9 @@ index.html. Then click on "Open with" then the name of your favorite browser.
     just created when you pushed.
   * You could also go to the URL of the forked repo. Notice the section that
     looks like
-  
+
   ![branches][]
-  
+
 You should be able to click on that arrow and to see a dropdown. From this
 dropdown, select the name of the branch you've been working on.
 
