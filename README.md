@@ -57,8 +57,6 @@ resume and other profiles online.
   can be easily cropped)
 * Background Picture
 * Previous Education and/or Work Experience
-* Github URL
-* LinkedIn URL (if they have one)
 * Favorite cites, food, websites
 * Favorite quote
 
@@ -151,7 +149,7 @@ index.html. Then click on "Open with" then the name of your favorite browser.
 
 * If you haven't already, switch to the branch you created. To make sure you're
   where you need to be, type `git branch` in your terminal. It should return the
-  name of your assigned student emphazised with an asterisk and master. The
+  name of your assigned student emphasized with an asterisk and master. The
   asterisk indicates which branch you're on. It should not be `master`.
   * For instance, typing `pwd` in the terminal would return:
 
@@ -174,9 +172,9 @@ index.html. Then click on "Open with" then the name of your favorite browser.
   `img/students` folder. The student you're writing the profile for may have to
   email you their desired pictures or send you links to them, etc.
   * For instance, we would add the pictures titled `zoe_perez_background.jpg`,
-    `zoe_perez_index.jpg`, and `zoe_perez_profile.jpg` to the `students` folder
+    and `zoe_perez_profile.jpg` to the `students` folder
     that is inside the `img` folder.
-  * File endings are case senstive. When adding an \<image\> tag, make sure that
+  * File endings are case sensitive. When adding an \<image\> tag, make sure that
     the image source is identical to the name of the image file.
 
 * Once you've completed the profile, open up `index.html`. Use the assigned
@@ -290,6 +288,7 @@ top of this lesson, but with the cards/profiles for your group only.
 * Once on the Settings page, scroll down to the `GitHub Pages` section
 * Under "Source," choose "master branch" and click "Save."
 * Navigate to `http://username.github.io/repository_name`, and have a look at your page!
+* Slack this URL out to the rest of your class so you can learn about each other!
 
  When you have fixed any errors and are ready to share, post your link in Slack
  so the rest of the class can read who you are!
