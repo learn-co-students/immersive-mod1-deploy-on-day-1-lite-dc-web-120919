@@ -301,7 +301,7 @@ Once every profile is on a single branch that is hosted remotely, it's time to
 deploy your table's profile page!  This will look like the sample link at the
 top of this lesson, but with the cards/profiles for your group only.
 
-* In your browser, navigate to the main github repo for your table.  
+* In your browser, navigate to the forked github repo for your table.  
 * At the top of the page, click on the `Settings` tab (the one with the gear symbol)
 * Once on the Settings page, scroll down to the `GitHub Pages` section
 * Under "Source," choose "master branch" and click "Save."
