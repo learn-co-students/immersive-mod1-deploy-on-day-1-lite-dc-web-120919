@@ -123,7 +123,7 @@ While working on this project, you will need to add the following files:
 * Once the `index.html` has the correct numbers of students as in your group, the person who forked the repo must git [add][],
   [commit][], and [push][] to your remote master. You can do all these steps in the terminal.
   * `git add .` will track all new or updated files since you first cloned down the repo.
-  * `git commit -m "describe your project change"` will save all your altered file as group them together as single change.
+  * `git commit -m "describe your project change"` will save all your altered file and group them together as single change.
   * `git push` will upload your change to GitHub.
 
 * Next, the person who forked the repo must add all team members as
@@ -152,7 +152,8 @@ index.html. Then click on "Open with" then the name of your favorite browser.
 
 * From the root directory, [checkout a new branch][]. This new branch's name
   should be the name of the student whose profile you're going to create.  
-  * For instance, the branch would be titled `zoe-perez`.
+  * For instance, if you are making a profile for Zoe Perez, you should create
+  a new branch `git checkout -b zoe-perez`.
   * Note: The `master` branch of a project is NEVER a place to do any work.
     `master` is considered the build and you never break the build. So make sure
     you are not working or committing to the `master` branch.
@@ -161,7 +162,7 @@ index.html. Then click on "Open with" then the name of your favorite browser.
   where you need to be, type `git branch` in your terminal. It should return the
   name of your assigned student emphasized with an asterisk and master. The
   asterisk indicates which branch you're on. It should not be `master`.
-  * For instance, typing `pwd` in the terminal would return:
+  * For instance, typing `git branch` in the terminal would return:
 
 ```sh
   master
@@ -194,20 +195,25 @@ index.html. Then click on "Open with" then the name of your favorite browser.
 #### Stage and Commit Changes
 
 * Once you're happy with the profile you've created and the changes you've
-  made to the index page, type [git status][]. The file you've altered,
-  index.html, should appear in the "Tracked Files" section and the files
-  you've created should appear in the "Untracked Files" section.
+  made to the index page, type `git status`. The file you've altered,
+  index.html, should appear in the "Changes not staged for commit" section and the files
+  you've created should appear in the "Untracked files" section.
 
-* You'll want to [add][] then [commit][] these changes with a message.
 
-* If you type `git status`, you should see "nothing to commit, working
-  directory clean". If you type `git remote -v`, it should display something
-  like:
+* If you type `git remote -v`, it should display something like:
 
-|remote | URL                                                               |         |
-|-------|-------------------------------------------------------------------|---------|
-|origin |https://github.com/table-member's-github-name/deploy-on-day-1...git| (fetch) |
-|origin |https://github.com/table-member's-github-name/deploy-on-day-1...git| (push)  |
+```sh
+origin https://github.com/table-member-github-name/deploy-on-day-1...git (fetch)
+origin https://github.com/table-member-github-name/deploy-on-day-1...git (push)  
+```
+
+* You'll want to [add][] then [commit][] these changes with a message. Remember how to do that?
+
+```sh
+git add .
+git commit -m "updated index page and added zoe perez page"
+git push
+```
 
 [git status]: (http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files)
 
