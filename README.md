@@ -57,8 +57,8 @@ resume and other profiles online.
   can be easily cropped)
 * Background Picture
 * Previous Education and/or Work Experience
-* Favorite cites, food, websites
-* Favorite quote
+* Their Favorite quote
+* Favorite cites, foods, and websites
 
 ## Structure
 
@@ -100,30 +100,40 @@ While working on this project, you will need to add the following files:
 
 ## Getting Started
 
-### Group Logistics
+### Group Instructions
 
 * Figure out who is going to write whose profile.
 
-  ![fork](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/fork.png)
-
 * Have one person at your table [fork][] this repo.
-* Git [clone][] the forked repo to that person's machine. Ensure that your
+
+![fork](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/fork.png)
+
+* Git [clone][] the forked repo to that person's machine.
+
+![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png)
+
+* Ensure that your
   `index.html` file has the same amount of `<li></li>` elements as you have
   persons on your team (the HTML sections in question are each surrounded by
   `<!-- Begin Student -->` and '<!-- End Student -->' comments). We have
   provided four by default, but you should either remove these or copy/paste to
   reflect the correct amount of people on your team. Assign individuals to
   specific `<li></li>` elements (order matters!).
-* Once the count is accurate, the person who forked the repo must git [add][],
-  [commit][], and [push][] to your remote master.
+
+* Once the `index.html` has the correct numbers of students as in your group, the person who forked the repo must git [add][],
+  [commit][], and [push][] to your remote master. You can do all these steps in the terminal.
+  * `git add .` will track all new or updated files since you first cloned down the repo.
+  * `git commit -m "describe your project change"` will save all your altered file as group them together as single change.
+  * `git push` will upload your change to GitHub.
+
 * Next, the person who forked the repo must add all team members as
   collaborators. Learn more about that [here][].
-* Following, this person should then send the link to their fork to everyone
-  sitting at their table.
 
-  ![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png)
+* Following, this person should then send the link to their **forked repo** to everyone in the group.
 
-* Everyone at the table should [clone][] the repo from this fork using this link. Do not clone directly from learn-co-curriculum.
+* Everyone at the table should [clone][] the the forked repo using this link. Do not clone directly from learn-co-curriculum.
+
+![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png)
 
 ### Individual Instructions
 
@@ -153,7 +163,7 @@ index.html. Then click on "Open with" then the name of your favorite browser.
   asterisk indicates which branch you're on. It should not be `master`.
   * For instance, typing `pwd` in the terminal would return:
 
-```text
+```sh
   master
 * zoe-perez
 ```
