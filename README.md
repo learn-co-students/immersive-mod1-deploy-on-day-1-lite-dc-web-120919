@@ -123,7 +123,7 @@ While working on this project, you will need to add the following files:
 * Once the `index.html` has the correct numbers of students as in your group, the person who forked the repo must git [add][],
   [commit][], and [push][] to your remote master. You can do all these steps in the terminal.
   * `git add .` will track all new or updated files since you first cloned down the repo.
-  * `git commit -m "describe your project change"` will save all your altered file and group them together as single change.
+  * `git commit -m "git message here"` will save all your altered file and group them together as single change. However, you should actually write a descriptive message describing the change you made.
   * `git push` will upload your change to GitHub.
 
 * Next, the person who forked the repo must add all team members as
@@ -137,15 +137,15 @@ While working on this project, you will need to add the following files:
 
 ### Individual Instructions
 
-Now that you have the repo, you'll want to get into it. Remember [cd][]? When
-you type `pwd` into your terminal and the last part of the text that gets
-returned is `deploy-on-day-1...` you're in the right place.
+Now that you have the repo, you'll want to get into it. Remember [cd][]? To check
+if you've done it correctly, type `pwd` into your terminal and if the last part of the text that gets
+returned is `immersive-mod1-deploy-on-day-1...` you're in the right place.
 **NOTE In all the hypothetical examples, we're writing a profile for Zoe Perez.**
 
 [cd]: http://linux.about.com/od/commands/a/Example-Uses-Of-The-Command-Cd.htm
 
-Take a look at `index.html` and `students/student_name.html` in the browser. You
-can do this many ways but one is by opening finder and right-clicking on
+Open the files `index.html` and `students/student_name.html` in the browser. You
+can do this many ways but one is by opening your project in Finder and right-clicking on
 index.html. Then click on "Open with" then the name of your favorite browser.
 
 #### Make a New Branch
@@ -153,7 +153,10 @@ index.html. Then click on "Open with" then the name of your favorite browser.
 * From the root directory, [checkout a new branch][]. This new branch's name
   should be the name of the student whose profile you're going to create.  
   * For instance, if you are making a profile for Zoe Perez, you should create
-  a new branch `git checkout -b zoe-perez`.
+  a new branch
+  ```sh
+  git checkout -b zoe-perez
+  ```
   * Note: The `master` branch of a project is NEVER a place to do any work.
     `master` is considered the build and you never break the build. So make sure
     you are not working or committing to the `master` branch.
@@ -177,9 +180,9 @@ index.html. Then click on "Open with" then the name of your favorite browser.
   name should be the name of the student you're creating the profile for. Use
   the file `student_name.html` to see an example of what a profile's HTML could
   look like.
-  * For instance, we would create a file `zoe_perez.html` in the main `students` folder.
+  * For instance, we would create a file `zoe_perez.html` in the `students` folder.
 
-* Still in this branch you created, add the three photos detailed above to the
+* Still in this branch you created, add the two photos detailed above to the
   `img/students` folder. The student you're writing the profile for may have to
   email you their desired pictures or send you links to them, etc.
   * For instance, we would add the pictures titled `zoe_perez_background.jpg`,
@@ -203,8 +206,8 @@ index.html. Then click on "Open with" then the name of your favorite browser.
 * If you type `git remote -v`, it should display something like:
 
 ```sh
-origin https://github.com/table-member-github-name/deploy-on-day-1...git (fetch)
-origin https://github.com/table-member-github-name/deploy-on-day-1...git (push)  
+origin https://github.com/table-member-github-name/immersive-mod1-deploy-on-day-1...git (fetch)
+origin https://github.com/table-member-github-name/immersive-mod1-deploy-on-day-1...git (push)  
 ```
 
 * You'll want to [add][] then [commit][] these changes with a message. Remember how to do that?
@@ -212,7 +215,6 @@ origin https://github.com/table-member-github-name/deploy-on-day-1...git (push)
 ```sh
 git add .
 git commit -m "updated index page and added zoe perez page"
-git push
 ```
 
 [git status]: (http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files)
@@ -220,7 +222,7 @@ git push
 #### Push Up Your Branch
 
 * Now it's time to [push][] to a remote branch. This remote branch doesn't
-    exist yet, you're going to create it by pushing.
+    exist yet, you're going to create it by `git push`.
 
   * **NOTE: Do not push to master. Do not type anything that contains the word master!**
   * You're going to push to a branch that is the same name as your local branch.
@@ -257,7 +259,7 @@ strategy and go for it!
 
 ### Merge Conflicts
 
-When [merging][], [merge conflicts][] can happen. Generally they look like:
+When [merging][], a [merge conflict][] can happen. Generally they look like:
 
 ```text
 > git branch
